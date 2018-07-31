@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModel } from '@2angular/forms'
+
 import { Hero } from '../Shared/hero';
 
 @Component({
