@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModel } from '@2angular/forms'
 
 import { Hero } from '../Shared/hero';
+import { HEROES } from '../Shared/mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -10,10 +10,7 @@ import { Hero } from '../Shared/hero';
 })
 export class HeroesComponent implements OnInit {
 
-  hero: Hero = {
-    id: 1,
-    name:'Windstom'
-  }
+  heroes = HEROES;
 
   constructor() { }
 
