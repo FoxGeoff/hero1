@@ -29,3 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ***
 ***
 # Project: Angular Hero
+
+## Summary
+
+*@Input hero (child component class) and <child [hero] = val> (in parent component template). This passes down a value from val to hero.*
+
+* You created a separate, reusable HeroDetailComponent.
+* You used a property binding to give the parent HeroesComponent control over the child HeroDetailComponent.
+* You used the @Input decorator to make the hero property available for binding by the external HeroesComponent.
+
