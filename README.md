@@ -30,6 +30,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ***
 # Project: Angular Hero
 
+
+# 5. Master / Detail
 ## Summary
 
 *@Input hero (child component class) and <child [hero] = val> (in parent component template). This passes down a value from val to hero.*
@@ -38,3 +40,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * You used a property binding to give the parent HeroesComponent control over the child HeroDetailComponent.
 * You used the @Input decorator to make the hero property available for binding by the external HeroesComponent.
 
+ 
+# 6. Services
+
+* Components shouldn't fetch or save data directly and they certainly shouldn't knowingly present fake data. They should focus on presenting data and delegate data access to a service.
+* Services are a great way to share information among classes that don't know each other. You'll create a MessageService and inject it in two place

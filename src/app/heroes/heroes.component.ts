@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Hero } from '../Shared/hero';
-import { HEROES } from '../Shared/mock-heroes';
+import { HeroService } from '../shared/hero.service';;
 
 @Component({
   selector: 'app-heroes',
@@ -10,12 +10,17 @@ import { HEROES } from '../Shared/mock-heroes';
 })
 export class HeroesComponent implements OnInit {
   title = "This is the title from the parent component"
-  heroes = HEROES;
+  heroes: Hero[];
   selectedHero: Hero;
 
-  constructor() { }
+  constructor(private heroService: HeroService) { }
 
   ngOnInit() {
+    this.getHeroes();
+  }
+  
+  getHeroes(): void {
+    this.heroes = this.heroService.getHeroes();
   }
 
   onSelect(hero: Hero): void {
