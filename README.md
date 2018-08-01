@@ -69,5 +69,8 @@ In this section you will:
 * The component's ngOnInit lifecycle hook calls the HeroService method, not the constructor.
 * You created a MessageService for loosely-coupled communication between classes.
 * The HeroService injected into a component is created with another injected service, MessageService.
+
+![Screen Shot](/images/ScreenShot1.png)
+
 # 7. Routing
 
