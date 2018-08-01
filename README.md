@@ -45,3 +45,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 * Components shouldn't fetch or save data directly and they certainly shouldn't knowingly present fake data. They should focus on presenting data and delegate data access to a service.
 * Services are a great way to share information among classes that don't know each other. You'll create a MessageService and inject it in two place
+
+## Observable data -  Observable HeroService
+ We will refactor from a synchronus to an asynchronous service using Observable (HttpClient) rather then Promise.
