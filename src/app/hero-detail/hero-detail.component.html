@@ -1,5 +1,5 @@
 <div *ngIf="hero">
-  <hr>
+  <hr> {{description}}
   <pre>THIS IS FROM THE HEROS-DETAILS COMPONENT (detail)</pre>
   <h2>{{hero.name | uppercase}} Details</h2>
   <div>
@@ -10,4 +10,20 @@
     </label>
   </div>
   <hr>
+  <div>
+    <p>Notes: we are using the expression
+      <strong>[prop] = "val"</strong>
+    </p>
+    <ul>
+      <li>where [prop] is defined in the child
+        <strong>@Input prop</strong>
+      </li>
+      <li>
+        <strong>val</strong> is defined in the parent</li>
+      <li>The DOM element property
+        <strong>[prop]</strong> is given the value of
+        <strong>val</strong>
+      </li>
+    </ul>
+  </div>
 </div>

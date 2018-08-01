@@ -9,7 +9,7 @@ import { HEROES } from '../Shared/mock-heroes';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-
+  title = "This is the title from the parent component"
   heroes = HEROES;
   selectedHero: Hero;
 

@@ -9,6 +9,7 @@ import { Hero } from '../Shared/hero';
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
+  @Input() description: string;
 
   constructor() { }
 
