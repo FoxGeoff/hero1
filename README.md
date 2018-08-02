@@ -75,4 +75,11 @@ In this section you will:
 # 7. Routing
 ## Add app-routing.module.ts
 1. Run: `ng generate module app-routing --flat --module=app`
+## Add Navigation to details
+The user should be able to get to these details in three ways.
+
+1. By clicking a hero in the dashboard.
+1. By clicking a hero in the heroes list.
+1. By pasting a "deep link" URL into the browser address bar that identifies the hero to display.
+
 

@@ -11,21 +11,3 @@
 <p> <strong>[hero]="selectedHero"</strong> This sets the [hero] property of the DOM (this maybe an html or template property not the same as an html element) to the 'selectedHero' variable of this class.</p>
 <p>We are passing the Master component value down to the child template <strong>"@Input hero: Hero"</strong></p>
 <br>
-<app-hero-detail [hero] ="selectedHero"  [description] = "title"></app-hero-detail>
-<br>
-<br>
-<br>
-<div *ngIf="selectedHero">
-  <p><strong>This is the original way:</strong></p>
-  <hr>
-  <pre>THIS IS FROM THE HEROS COMPONENT (Master)</pre>
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
-  <div>
-    <span>id: </span>{{selectedHero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedHero.name" placeholder="name">
-    </label>
-  </div>
-  <hr>
-</div>
