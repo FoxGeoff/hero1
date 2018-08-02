@@ -73,4 +73,6 @@ In this section you will:
 ![Screen Shot](/images/ScreenShot1.png)
 
 # 7. Routing
+## Add app-routing.module.ts
+1. Run: `ng generate module app-routing --flat --module=app`
 
