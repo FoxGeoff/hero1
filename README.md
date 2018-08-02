@@ -73,13 +73,28 @@ In this section you will:
 ![Screen Shot](/images/ScreenShot1.png)
 
 # 7. Routing
+
 ## Add app-routing.module.ts
 1. Run: `ng generate module app-routing --flat --module=app`
-## Add Navigation to details
-The user should be able to get to these details in three ways.
+1. `--flat` puts the file under src/app instead of it's own folder
+1. `--module=app` tells CLI to register it in the array of the AppModule
 
+## Add Navigation to details
+
+The user should be able to get to these details in three ways.
 1. By clicking a hero in the dashboard.
 1. By clicking a hero in the heroes list.
 1. By pasting a "deep link" URL into the browser address bar that identifies the hero to display.
 
+## Add Routable HeroDetailComponent
+
+Previously, the parent HeroesComponent set the HeroDetailComponent.hero property and the HeroDetailComponent displayed the hero.
+
+HeroesComponent doesn't do that anymore. Now the router creates the HeroDetailComponent in response to a URL such as `~/detail/11`.
+
+The HeroDetailComponent needs a new way to obtain the hero-to-display.
+
+* Get the route that created it,
+* Extract the id from the route
+* Acquire the hero with that id from the server via the HeroService
 
