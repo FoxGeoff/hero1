@@ -11,7 +11,7 @@ import { HeroService } from '../shared/hero.service';;
 export class HeroesComponent implements OnInit {
   title = "This is the title from the parent component"
   heroes: Hero[];
-  selectedHero: Hero;
+  /*selectedHero: Hero; */
 
   constructor(private heroService: HeroService) { }
 
