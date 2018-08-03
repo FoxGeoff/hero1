@@ -98,3 +98,34 @@ The HeroDetailComponent needs a new way to obtain the hero-to-display.
 * Extract the id from the route
 * Acquire the hero with that id from the server via the HeroService
 
+## Summary
+1. You added the Angular router to navigate among different components.
+1. You turned the AppComponent into a navigation shell with `<a>` links and a `<router-outlet>`.
+1. You configured the router in an AppRoutingModule
+1. You defined simple routes, a redirect route, and a parameterized route.
+1. You used the routerLink directive in anchor elements.
+1. You refactored a tightly-coupled master/detail view into a routed detail view.
+1. You used router link parameters to navigate to the detail view of a user-selected hero.
+1. You shared the HeroService among multiple components.
+
+# 8. HTTP
+
+Using `HTTPClient` we will show how:
+1. The HeroService gets hero data with HTTP requests.
+1. Users can add, edit, and delete heroes and save these changes over HTTP.
+1. Users can search for heroes by name
+
+# Install the In-memory Web API package from npm
+Important: the In-memory Web API module has nothing to do with HTTP in Angular.
+1. Run : `npm install angular-in-memory-web-api --save `
+1. Add the HttpClientInMemoryWebApiModule to the @NgModule.imports array— after importing the HttpClient, —while configuring it with the InMemoryDataService.
+``` 
+HttpClientModule,
+
+// The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+// and returns simulated server responses.
+// Remove it when a real server is ready to receive requests.
+HttpClientInMemoryWebApiModule.forRoot(
+  InMemoryDataService, { dataEncapsulation: false }
+)
+```
