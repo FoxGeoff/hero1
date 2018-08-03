@@ -137,3 +137,11 @@ HttpClientInMemoryWebApiModule.forRoot(
 
 ## Add Search by name
 ## Add search to the Dashboard
+## Add  HeroSearchComponent
+In hero-search.component.ts
+1. debounceTime(300) waits until the flow of new string events pauses for 300 milliseconds before passing along the latest string. You'll never make requests more frequently than 300ms.
+
+1. distinctUntilChanged() ensures that a request is sent only if the filter text changed.
+
+1. switchMap() calls the search service for each search term that makes it through debounce and distinctUntilChanged. It cancels and discards previous search observables, returning only the latest search service observable.
+
