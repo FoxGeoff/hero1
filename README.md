@@ -145,3 +145,13 @@ In hero-search.component.ts
 
 1. switchMap() calls the search service for each search term that makes it through debounce and distinctUntilChanged. It cancels and discards previous search observables, returning only the latest search service observable.
 
+# Summary
+You're at the end of your journey, and you've accomplished a lot.
+
+1. You added the necessary dependencies to use HTTP in the app.
+1. You refactored HeroService to load heroes from a web API.
+1. You extended HeroService to support post(), put(), and delete() methods.
+1. You updated the components to allow adding, editing, and deleting of heroes.
+1. You configured an in-memory web API.
+1. You learned how to use observables.
+
