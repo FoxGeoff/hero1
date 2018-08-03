@@ -130,6 +130,7 @@ HttpClientInMemoryWebApiModule.forRoot(
 )
 ```
 # Get heroes with HttpClient
-## Add Heros anf HTTP
+## Add Heros and HTTP
 
+# Search by name
 ## Add search to the Dashboard
