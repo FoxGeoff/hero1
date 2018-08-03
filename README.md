@@ -129,3 +129,7 @@ HttpClientInMemoryWebApiModule.forRoot(
   InMemoryDataService, { dataEncapsulation: false }
 )
 ```
+# Get heroes with HttpClient
+## Add Heros anf HTTP
+
+## Add search to the Dashboard
